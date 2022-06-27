@@ -13,4 +13,12 @@ for (let i = 0; i < btnsOpenModal.length; i++)
     // Neste caso a classe nao adiciona o ponto "." e sim o somente o nome da classe.
     // Caso removermos o hidden o texto aparecerá
     modal.classList.remove('hidden')
+
+    //backdrop-filter blur
+    overlay.classList.remove('hidden')
   })
+
+btnCloseModal.addEventListener('click', function () {
+  modal.classList.add('hidden')
+  overlay.classList.add('hidden')
+})
